@@ -1,0 +1,28 @@
+<!--My layout page-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Password Strength Tester</title>
+      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Welcome to the Password Strength Tester</h1>
+        <h4>By Darshan Desai</h4>
+        <hr>
+        <strong><nav>
+          <ul class="menu">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+        {%block content%}
+        {%endblock%}
+    </div>
+  </body>
+</html>
