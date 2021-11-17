@@ -13,4 +13,4 @@
 - [x] Committed at least 6 code changes
 - [x] Include comment explaining each change
 - [x] Combine templates into one single folder
-- [] Create and edit CSS file for flask webpage 
+- [x] Create and edit CSS file for flask webpage 
