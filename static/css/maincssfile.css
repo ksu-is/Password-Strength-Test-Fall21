@@ -1,0 +1,63 @@
+/*My main css file*/
+
+
+
+body {
+    margin: 25px;
+    padding: 8px;
+    background-color: darkslategray;
+    font-family: "Helvetica";
+    color: lightgray;
+  }
+  
+  header {
+    background-color: rgb(118, 136, 14);
+    height: 90px;
+    width: 100%;
+    opacity: .75;
+    margin-bottom: 60px;
+  }
+  
+  header h1.logo {
+    margin: 5;
+    font-size: 2em;
+    color: White;
+    text-transform: capitalize;
+    text-align: center;
+    float: center;
+  }
+  
+  header h1.logo:hover {
+    color: black;
+    text-align: flex;
+    height: 37px;
+    text-decoration: none;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  div.home {
+    padding: 15px 0 30px 0;
+    background-color: rgb(51, 92, 92);
+    -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+        border-radius: 5px;
+  }
+  
+  div.about {
+    padding: 20px 0 100px 0;
+    background-color: rgb(51, 92, 92);
+    -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+        border-radius: 5px;
+  }
+  
+  .menu {
+    float: right;
+    margin-top: 10px;
+  }
+  
