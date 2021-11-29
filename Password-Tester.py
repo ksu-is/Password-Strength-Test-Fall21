@@ -1,4 +1,4 @@
-#My main file for code
+
 
 from flask import Flask, render_template, request
 app=Flask(__name__)
@@ -7,11 +7,11 @@ app=Flask(__name__)
 def greet():
     inputName = request.form['myName']
 
-    #split password given into list, separated by commas, and set var for password score
+    #split password inputed into a list and set variable for password strength score
     inputName.split(",")
     strength_score = 0
     
-    #gathers points based on what the password is comprised of, character wise
+    #gathers points based on what the password is comprised of. Tests for characters, numerics, and special characters
     for character in inputName:
         if character.isalpha():
             if character.isupper():
@@ -23,7 +23,7 @@ def greet():
         else:
             strength_score += 6
 
-    #gathers points based on how long password is
+    #gathers points on how long password is
     if len(inputName) < 5:
         strength_score += 3
     elif len(inputName) >= 5 and len(inputName) < 8:
@@ -41,8 +41,8 @@ def greet():
     else:
         final_score = "Excellent!"
     
-    #prints password given, points score, and final score word
-    inputName ="\'" + inputName + "\' is the password you inputted, and it has \na strength of " + str(strength_score) + "! " + final_score
+    #prints password given, points score, and final evaluation. Reminds user to save passcode in a secure location
+    inputName ="\'" + inputName + "\' is the password you inputted, and it has \na strength of " + str(strength_score) + "! " + final_score + "Remember to copy and save your password in a secure location"
     return render_template("home.html",myName=inputName)
 
 @app.route('/') 
