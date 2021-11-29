@@ -1,0 +1,13 @@
+<!--My home page-->
+
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <h1>The Password Strength Tester:</h1>
+    <p>Your score will show here (0 being the worst, 100 being the best): {{myName}}</p>
+    <p><form action="{{ url_for('greet') }}" method='post'>
+        Please input the passcode you want to test: <input type='text' name='myName'><br>
+        <input type='submit' value='Submit'>
+        </form></p>
+</div>
+{% endblock %}
