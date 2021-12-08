@@ -3,15 +3,15 @@
 
 
 body {
-    margin: 25px;
-    padding: 8px;
-    background-color: darkslategray;
-    font-family: "Helvetica";
-    color: lightgray;
+    margin: 40px;
+    padding: 20px;
+    background-color: rgb(238, 210, 210);
+    font-family: "Times New Roman";
+    color: rgb(248, 245, 245);
   }
   
   header {
-    background-color: rgb(118, 136, 14);
+    background-color: rgb(0, 0, 0);
     height: 90px;
     width: 100%;
     opacity: .75;
@@ -42,7 +42,7 @@ body {
   
   div.home {
     padding: 15px 0 30px 0;
-    background-color: rgb(51, 92, 92);
+    background-color: rgb(235, 12, 12);
     -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
         border-radius: 5px;
@@ -50,7 +50,7 @@ body {
   
   div.about {
     padding: 20px 0 100px 0;
-    background-color: rgb(51, 92, 92);
+    background-color: rgb(235, 12, 12);
     -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
         border-radius: 5px;
