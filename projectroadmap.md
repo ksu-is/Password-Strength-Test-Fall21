@@ -14,3 +14,10 @@
 - [x] Include comment explaining each change
 - [x] Combine templates into one single folder
 - [x] Create and edit CSS file for flask webpage 
+
+# Sprint 3:
+- [x] Create one slide PowerPoint 
+- [x] Edit CSS file
+- [x] Edit main phython code and fix scoreing system
+- [x] Make changes to home and about layout pages
+- [x] Finish and push final code to GitHub repository
