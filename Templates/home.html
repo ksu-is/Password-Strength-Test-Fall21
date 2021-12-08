@@ -4,10 +4,10 @@
 {% block content %}
 <div class="home">
     <h1>The Password Strength Tester:</h1>
-    <p>Your score will show here (0 being the worst, 100 being the best): {{myName}}</p>
+    <p>Your score will show here (0 to 25 is weak, 25 to 50 is under average, 50 to 75 is above average, above 75 is excellent): {{myName}}</p>
     <p><form action="{{ url_for('greet') }}" method='post'>
         Please input the passcode you want to test: <input type='text' name='myName'><br>
         <input type='submit' value='Submit'>
         </form></p>
-</div>
+        <img src="{{url_for('static', filename='passwrod strength meter.png')}}" align="middle" width="400" height="200" />
 {% endblock %}
